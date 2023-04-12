@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "F0CA9B55C89238E078A9674F448F8BCB",
+  "keywordClasses": [
+    {
+      "name": "customKeyword.openBrowserAndNavigateToUrl",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}
