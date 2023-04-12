@@ -32,8 +32,6 @@ class NewTestListener {
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseVariables()
 	
-		// modify WebUI.* keywords which take TestObject as arg0
-		// so that they call Highlight.on() automatically
 			
 		
 	}
@@ -55,7 +53,7 @@ class NewTestListener {
 	@BeforeTestSuite
 	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
 		println testSuiteContext.getTestSuiteId()
-		CustomKeywords.'customKeyword.loginHelper.openBrowserAndNavigateToUrl'(GlobalVariable.Url)
+		
 	}
 
 	/**
@@ -65,6 +63,6 @@ class NewTestListener {
 	@AfterTestSuite
 	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
 		println testSuiteContext.getTestSuiteId()
-		CustomKeywords.'customKeyword.loginHelper.logoutAndCloseBrowser'()
+
 	}
 }
