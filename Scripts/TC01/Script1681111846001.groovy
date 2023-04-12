@@ -3,9 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import javax.swing.text.Highlighter.Highlight
-
+import javax.swing.text.Highlighter.Highlight as Highlight
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -45,6 +43,4 @@ WebUI.setText(findTestObject('Object Repository/Page_CURA_Healthcare_Service/inp
 WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/button_Login'))
 
 WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/make_Appointment_title'), 'Make Appointment')
-
-WebUI.closeBrowser()
 

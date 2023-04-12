@@ -51,5 +51,3 @@ WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/combot_faci
 
 WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/combot_facility_seoul'), 'Seoul CURA Healthcare Center')
 
-WebUI.closeBrowser()
-

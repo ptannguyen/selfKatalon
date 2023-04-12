@@ -22,7 +22,7 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-class NewTestListener {
+class NewTestListener_1 {
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
@@ -31,9 +31,6 @@ class NewTestListener {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseVariables()
-	
-			
-		
 	}
 
 	/**
@@ -44,7 +41,6 @@ class NewTestListener {
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseStatus()
-		CustomKeywords.'customKeyword.loginHelper.logoutAndCloseBrowser'()
 	}
 
 	/**
@@ -54,7 +50,6 @@ class NewTestListener {
 	@BeforeTestSuite
 	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
 		println testSuiteContext.getTestSuiteId()
-		
 	}
 
 	/**
@@ -64,6 +59,5 @@ class NewTestListener {
 	@AfterTestSuite
 	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
 		println testSuiteContext.getTestSuiteId()
-
 	}
 }

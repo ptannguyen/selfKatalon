@@ -43,5 +43,3 @@ WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/butto
 
 WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/error_message_login_fail'), 'Login failed! Please ensure the username and password are valid.')
 
-WebUI.closeBrowser()
-

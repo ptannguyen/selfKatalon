@@ -19,4 +19,4 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'customKeyword.loginHelper.openBrowserAndNavigateToUrl'(GlobalVariable.Url)
 CustomKeywords.'customKeyword.loginHelper.loginWithUserAccount'(GlobalVariable.userName, GlobalVariable.passWord)
-CustomKeywords.'customKeyword.loginHelper.logoutAndCloseBrowser'()
+//CustomKeywords.'customKeyword.loginHelper.logoutAndCloseBrowser'()

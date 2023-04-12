@@ -17,27 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
-
-WebUI.maximizeWindow()
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA_Healthcare_Service/lbl_CURAHealthcareService'), 'CURA Healthcare Service')
-
-WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/a_CURA Healthcare_menu-toggle'))
-
-WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/a_Login'))
-
-WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/input_Username_username'))
-
-WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/login_title'), 'Login')
-
-WebUI.setText(findTestObject('Object Repository/Page_CURA_Healthcare_Service/input_Username_username'), '')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA_Healthcare_Service/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('Object Repository/Page_CURA_Healthcare_Service/button_Login'))
-
-WebUI.verifyElementText(findTestObject('Page_CURA_Healthcare_Service/error_message_login_fail'), 'Login failed! Please ensure the username and password are valid.')
+WebUI.callTestCase(findTestCase('TC01'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'createAppointment.createNewAppointment.createNewAppointmentWithDataTest'(GlobalVariable.hongKong_faclity,
+	GlobalVariable.visit_day_choose, GlobalVariable.comment_book)
 
